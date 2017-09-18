@@ -1,2 +1,4 @@
 # hotcoldtests
-# react-trello-testing
+
+React Hot Cold Test App with tests and CI
+
