@@ -1,25 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-import './guess-list.css';
+import '../components/guess-list.css';
 
-export default class Guesses extends Component {
+class Guesses extends Component {
   renderGuesses() {
-    return this.props.guesses.map(guess => (
-      <li key={index}>
-        {guess}
+    return this.props.guesses.map((guess, index) => (
+      <li key={index} className="guessBox clearfix">
+        {this.props.guesses}
       </li>
-
     ));
   }
-render(){
-  return (
-    <ul id="guessList" className="guessBox clearfix">
-      {guesses}
-    </ul>
-  );
+
+  render() {
+    return (
+      <ul id="guessList" className="guessBox clearfix">
+        {this.renderGuesses()}
+      </ul>
+    );
+  }
+}
+function mapStateToProps(state) {
+  return {
+    guesses: state.guesses,
+  };
 }
 
-
+export default connect(mapStateToProps)(Guesses);
 // export default function GuessList(props) {
 //   const guesses = props.guesses.map((guess, index) => (
 //     <li key={index}>
