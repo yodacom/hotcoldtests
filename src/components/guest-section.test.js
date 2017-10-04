@@ -5,11 +5,10 @@ import GuestSection from './guess-section';
 
 describe('<GuestSection />', () => {
   it('Renders without crashing', () => {
-  shallow(<GuestSection />);
+    shallow(<GuestSection />);
   });
 
-it('Should show guess input when entered in form', () => {
+  it('Should show guess input when entered in form', () => {
 
-})
-
+  });
 });

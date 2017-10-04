@@ -5,7 +5,6 @@ import Game from './game';
 
 describe('<Game />', () => {
   it('Renders without crashing', () => {
-  shallow(<Game />);
+    shallow(<Game />);
   });
-
 });
