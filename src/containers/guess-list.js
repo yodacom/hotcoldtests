@@ -7,7 +7,7 @@ class Guesses extends Component {
   renderGuesses() {
     return this.props.guesses.map((guess, index) => (
       <li key={index} className="guessBox clearfix">
-        {this.props.guesses}
+        {guess}
       </li>
     ));
   }
