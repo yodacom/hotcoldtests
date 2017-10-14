@@ -8,13 +8,15 @@ import './reset.css';
 import './index.css';
 
 import Game from './components/game';
+import Store from './components/store';
 
-const store = StoreConfig({
-  guesses: [],
-});
+// const store = StoreConfig({
+//   guesses: [],
+// });
+
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={Store}>
     <Game />
   </Provider>,
   document.getElementById('root'),

@@ -27,6 +27,7 @@ function mapStateToProps(state) {
 }
 
 export default connect(mapStateToProps)(Guesses);
+
 // export default function GuessList(props) {
 //   const guesses = props.guesses.map((guess, index) => (
 //     <li key={index}>
